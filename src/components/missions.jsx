@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../redux/missions/missionSlice';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Mission from './Mission';
 import '../styles/mission.css';
 
 function Missions() {
   const missionList = useSelector((state) => state.missions.Missions);
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
   return (
     <>
       <table className="container">
@@ -23,12 +18,13 @@ function Missions() {
           </tr>
         </thead>
         {missionList.map((mission) => (
-          <tbody key={mission.id} className="mission">
+          <tbody key={mission.mission_id} className="mission">
             <Mission
               key={mission.mission_id}
               id={mission.mission_id}
               name={mission.mission_name}
               description={mission.description}
+              joined={mission.joined}
             />
           </tbody>
         ))}
