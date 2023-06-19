@@ -82,7 +82,7 @@ Example command:
 
 Clone this repository to your desired folder:
 
-To clone this repository on your machine run `https://github.com/misalazeem/bookstore-react.git`
+To clone this repository on your machine run `https://github.com/misalazeem/space-travelers-react-capstone.git`
 
 <!--
 Example commands:
