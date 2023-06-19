@@ -44,7 +44,7 @@ function Rocket({
               onClick={handleCancelRocket}
               className="rocket-button-cancel"
             >
-              Reserve Rocket
+              Cancel Reservation
             </button>
           </>
         )}
