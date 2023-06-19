@@ -37,3 +37,20 @@
   border: 1px solid #0290ff;
   border-radius: 5px;
 }
+
+.rocket-button-cancel {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.reserved-span {
+  background-color: #1693a7;
+  border-radius: 3px;
+  color: #fff;
+  padding: 2px;
+  margin-right: 3px;
+}
