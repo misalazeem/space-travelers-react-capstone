@@ -24,3 +24,18 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
+.profile-rows {
+  border: none !important;
+  border-bottom: 1px solid #000 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-columns {
+  border: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

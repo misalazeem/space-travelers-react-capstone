@@ -13,9 +13,17 @@ function Profile() {
         <h2>My Missions</h2>
         <table className="mission-table">
           <tbody>
+            {joinedMissions.length === 0
+              && (
+              <>
+                <tr>
+                  <td>No Missions Joined</td>
+                </tr>
+              </>
+              )}
             {joinedMissions.map((mission) => (
-              <tr key={mission.mission_id}>
-                <td>{mission.mission_name}</td>
+              <tr className="profile-rows" key={mission.mission_id}>
+                <td className="profile-columns">{mission.mission_name}</td>
               </tr>
             ))}
           </tbody>
@@ -25,9 +33,17 @@ function Profile() {
         <h2>My Rockets</h2>
         <table className="mission-table">
           <tbody>
+            {reservedRockets.length === 0
+              && (
+              <>
+                <tr>
+                  <td>No Rockets Reserved</td>
+                </tr>
+              </>
+              )}
             {reservedRockets.map((rocket) => (
-              <tr key={rocket.id}>
-                <td>{rocket.rocket_name}</td>
+              <tr className="profile-rows" key={rocket.id}>
+                <td className="profile-columns">{rocket.rocket_name}</td>
               </tr>
             ))}
           </tbody>

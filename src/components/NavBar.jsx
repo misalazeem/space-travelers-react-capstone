@@ -14,20 +14,18 @@ function NavBar() {
         </div>
         <div className="navlinks">
           <ul>
-            <li className={location.pathname === '/rockets' ? 'active' : ''}>
-              <Link to="/rockets" className="links-desktop">
+            <li className={location.pathname === '/' ? 'active' : ''}>
+              <Link to="/" className="links-desktop">
                 Rockets
               </Link>
             </li>
-          </ul>
-          <ul>
+
             <li className={location.pathname === '/missions' ? 'active' : ''}>
               <Link to="/missions" className="links-desktop">
                 Missions
               </Link>
             </li>
-          </ul>
-          <ul>
+
             <li className={location.pathname === '/my-profile' ? 'active' : ''}>
               <Link to="/my-profile" className="links-desktop">
                 My Profile

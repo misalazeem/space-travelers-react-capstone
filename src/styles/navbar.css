@@ -1,8 +1,9 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  padding-bottom: 30px;
   justify-content: space-between;
-  align-items: center;
+  border-bottom: 3px solid #d3d3d3;
 }
 
 .logo {
@@ -22,15 +23,20 @@
 }
 
 .navlinks {
-  width: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .navlinks ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.navlinks li {
+  margin-left: 25px;
 }
 
 .links-desktop {
