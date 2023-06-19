@@ -41,3 +41,22 @@ th {
   border: 1px solid #000;
   color: #000;
 }
+
+.btn-leave {
+  width: 8rem;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 3px;
+  border: 1px solid red;
+  color: red;
+}
+
+.btn-width-joined {
+  width: 8rem;
+  background-color: green;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 5px 3px;
+  color: #fff;
+}
