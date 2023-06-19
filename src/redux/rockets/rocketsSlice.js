@@ -19,18 +19,19 @@ const rocketsSlice = createSlice({
   name: 'rocketlist',
   initialState,
   reducers: {
-    loadRockets: (state, action) => {
-      const rocketid = action.payload.id;
-      const rocketname = action.payload.rocket_name;
-      const rocketdescription = action.payload.description;
-      const images = action.payload.flickr_images;
-      const rocket = {
-        id: rocketid,
-        rocket_name: rocketname,
-        description: rocketdescription,
-        flickr_images: images,
-      };
-      state.Rockets.push(rocket);
+    reserveRocket: (state, action) => {
+      const rocketId = action.payload;
+      const rocket = state.Rockets.find((rocket) => rocket.id === rocketId);
+      if (rocket) {
+        rocket.reserved = true;
+      }
+    },
+    cancelRocket: (state, action) => {
+      const rocketId = action.payload;
+      const rocket = state.Rockets.find((rocket) => rocket.id === rocketId);
+      if (rocket) {
+        rocket.reserved = false;
+      }
     },
   },
   extraReducers: (builder) => {
@@ -45,6 +46,7 @@ const rocketsSlice = createSlice({
           rocket_name: rocket.name,
           description: rocket.description,
           image: rocket.flickr_images[0],
+          reserved: false,
         }));
       })
       .addCase(fetchRockets.rejected, (state) => {
@@ -52,5 +54,5 @@ const rocketsSlice = createSlice({
       });
   },
 });
-export const { loadRockets } = rocketsSlice.actions;
+export const { reserveRocket, cancelRocket } = rocketsSlice.actions;
 export default rocketsSlice.reducer;
