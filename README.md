@@ -139,7 +139,7 @@ Example command:
 
 ### Deployment
 
-- Coming soon
+- <a href="https://dev--adorable-pegasus-239e60.netlify.app/">Click here for live demo</a>
 
 <!--
 Example:
@@ -205,6 +205,7 @@ If you like this project give it a rating.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+- This project is [MIT](./LICENSE) licensed.
+- This project is [creativecommons](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
