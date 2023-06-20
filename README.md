@@ -34,7 +34,7 @@
 
 This is Space Travelers App for Microverse with REACT. The app will work as a Reserving and joining mission app with a wide variety of uses through API callsk.
 
-## 🛠 Built With <a name="built-with">HTML5 , CSS, REACT</a>
+## 🛠 Built With <a name="built-with">HTML5 , CSS, REACT and REDUX</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -160,6 +160,12 @@ Example:
 - GitHub: [@misalazeem](https://github.com/misalazeem)
 - Twitter: [@misal_azeem](https://twitter.com/misal_azeem)
 - LinkedIn: https://www.linkedin.com/in/misal-94755a82/
+
+👤 **Musangamfura Emmanuel**
+
+- [GitHub](https://github.com/musangamfure)
+- [Twitter](https://twitter.com/musangamfure)
+- [LinkedIn](https://www.linkedin.com/in/musangamfurae)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
