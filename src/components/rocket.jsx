@@ -21,32 +21,27 @@ function Rocket({
       <img alt="rocket" className="rocket-image" src={image} />
       <div className="rocket-details">
         <h2>{name}</h2>
+        <p>
+          {reserved && <span className="reserved-span">Reserved </span>}
+          {description}
+        </p>
         {!reserved && (
-          <>
-            <p>{description}</p>
-            <button
-              type="button"
-              onClick={handleReserveRocket}
-              className="rocket-button"
-            >
-              Reserve Rocket
-            </button>
-          </>
+          <button
+            type="button"
+            onClick={handleReserveRocket}
+            className="rocket-button"
+          >
+            Reserve Rocket
+          </button>
         )}
         {reserved && (
-          <>
-            <p>
-              <span className="reserved-span">Reserved </span>
-              {description}
-            </p>
-            <button
-              type="button"
-              onClick={handleCancelRocket}
-              className="rocket-button-cancel"
-            >
-              Cancel Reservation
-            </button>
-          </>
+          <button
+            type="button"
+            onClick={handleCancelRocket}
+            className="rocket-button-cancel"
+          >
+            Cancel Reservation
+          </button>
         )}
       </div>
     </div>
