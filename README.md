@@ -141,6 +141,10 @@ Example command:
 
 - <a href="https://dev--adorable-pegasus-239e60.netlify.app/">Click here for live demo</a>
 
+## 🚀 Zoom Video (explanation) <a name="zoom"></a>
+
+[Author's Explanation](https://drive.google.com/file/d/1oyJhLiI6G3MIo-IAxY19l-H2pSfUYQyz/view?usp=sharing)
+
 <!--
 Example:
 
