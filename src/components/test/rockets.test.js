@@ -18,7 +18,7 @@ test('renders Rockets component correctly', () => {
   const { container } = render(
     <Provider store={store}>
       <Rockets rocketList={rocketList} />
-    </Provider>
+    </Provider>,
   );
 
   expect(container.firstChild).toMatchSnapshot();

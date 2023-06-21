@@ -25,7 +25,7 @@ test('renders rocket details correctly when not reserved', () => {
         image={rocketData.image}
         reserved={rocketData.reserved}
       />
-    </Provider>
+    </Provider>,
   );
 
   expect(screen.getByAltText('rocket')).toHaveAttribute('src', 'rocket1.jpg');
@@ -45,7 +45,7 @@ test('dispatches reserveRocket when Reserve Rocket button is clicked', () => {
         image={rocketData.image}
         reserved={rocketData.reserved}
       />
-    </Provider>
+    </Provider>,
   );
 
   fireEvent.click(screen.getByText('Reserve Rocket'));
@@ -64,7 +64,7 @@ test('dispatches cancelRocket when Cancel Reservation button is clicked', () => 
         image={reservedRocketData.image}
         reserved={reservedRocketData.reserved}
       />
-    </Provider>
+    </Provider>,
   );
 
   fireEvent.click(screen.getByText('Cancel Reservation'));
