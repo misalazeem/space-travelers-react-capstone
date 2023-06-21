@@ -1,6 +1,6 @@
 import '../styles/navbar.css';
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 function NavBar() {
   const location = useLocation();
@@ -15,21 +15,21 @@ function NavBar() {
         <div className="navlinks">
           <ul>
             <li className={location.pathname === '/' ? 'active' : ''}>
-              <Link to="/" className="links-desktop">
+              <NavLink to="/" className="links-desktop">
                 Rockets
-              </Link>
+              </NavLink>
             </li>
 
             <li className={location.pathname === '/missions' ? 'active' : ''}>
-              <Link to="/missions" className="links-desktop">
+              <NavLink to="/missions" className="links-desktop">
                 Missions
-              </Link>
+              </NavLink>
             </li>
 
             <li className={location.pathname === '/my-profile' ? 'active' : ''}>
-              <Link to="/my-profile" className="links-desktop">
+              <NavLink to="/my-profile" className="links-desktop">
                 My Profile
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
