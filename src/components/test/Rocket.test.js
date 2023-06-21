@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
-import Rocket from '../Rocket';
+import Rocket from '../Rocket.jsx';
 import { reserveRocket, cancelRocket } from '../../redux/rockets/rocketsSlice';
 
 jest.mock('../../redux/store');
